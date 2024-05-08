@@ -30,40 +30,39 @@ class _MenuState extends State<Menu> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 170,
-                width: 400,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: const Color(0xffffab40),
-                ),
-                child: const Stack(
-                  children: [
-                    Positioned(
-                      top: 20,
-                      left: 20,
-                      child: CircleAvatar(
-                        radius: 60,
-                        backgroundImage: AssetImage('assets/my.JPG'),
-                      ),
-                    ),
-                    Positioned(
-                      top: 50,
-                      left: 170,
-                      child: Text(
-                        'Barath\n Nagarajan',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22,
-                          color: Colors.black,
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 170,
+                  width: 400,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: const Color(0xffffab40),
+                  ),
+                  child: const Stack(
+                    children: [
+                      Positioned(
+                        top: 20,
+                        left: 20,
+                        child: CircleAvatar(
+                          radius: 60,
+                          backgroundImage: AssetImage('assets/my.JPG'),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              )
-            ),
+                      Positioned(
+                        top: 50,
+                        left: 170,
+                        child: Text(
+                          'Barath\n Nagarajan',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                )),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
@@ -86,9 +85,13 @@ class _MenuState extends State<Menu> {
                       ),
                       title: const Text(
                         'Appearance',
-                        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16),
                       ),
-                      subtitle: const Text('Make Ziars App yours',style: TextStyle(fontSize: 12,color: Colors.grey),),
+                      subtitle: const Text(
+                        'Make Ziars App yours',
+                        style: TextStyle(fontSize: 12, color: Colors.grey),
+                      ),
                       trailing: const Icon(Icons.arrow_forward_ios),
                     ),
                     const Divider(),
@@ -103,10 +106,12 @@ class _MenuState extends State<Menu> {
                       ),
                       title: const Text(
                         'Privacy',
-                        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16),
                       ),
-                      subtitle:
-                      const Text('Lock Ziar App to improve your privacy',style: TextStyle(fontSize: 12,color: Colors.grey)),
+                      subtitle: const Text(
+                          'Lock Ziar App to improve your privacy',
+                          style: TextStyle(fontSize: 12, color: Colors.grey)),
                       trailing: const Icon(Icons.arrow_forward_ios),
                     ),
                     const Divider(),
@@ -121,9 +126,11 @@ class _MenuState extends State<Menu> {
                       ),
                       title: const Text(
                         'Dark mode',
-                        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16),
                       ),
-                      subtitle: const Text('Automatic',style: TextStyle(fontSize: 12,color: Colors.grey)),
+                      subtitle: const Text('Automatic',
+                          style: TextStyle(fontSize: 12, color: Colors.grey)),
                       trailing: CupertinoSwitch(
                         value: isSwitched,
                         activeColor: Colors.orange,
@@ -160,9 +167,11 @@ class _MenuState extends State<Menu> {
                       ),
                       title: const Text(
                         'About',
-                        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16),
                       ),
-                      subtitle: const Text('Learn more about Ziars App',style: TextStyle(fontSize: 12,color: Colors.grey)),
+                      subtitle: const Text('Learn more about Ziars App',
+                          style: TextStyle(fontSize: 12, color: Colors.grey)),
                       trailing: const Icon(Icons.arrow_forward_ios),
                     ),
                   ],
@@ -191,9 +200,12 @@ class _MenuState extends State<Menu> {
                       ),
                       title: const Text(
                         'Send Feedback',
-                        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16),
                       ),
-                      subtitle: const Text('Let us know how we can make Ziar app',style: TextStyle(fontSize: 12,color: Colors.grey)),
+                      subtitle: const Text(
+                          'Let us know how we can make Ziar app',
+                          style: TextStyle(fontSize: 12, color: Colors.grey)),
                       trailing: const Icon(Icons.arrow_forward_ios),
                     ),
                   ],
@@ -229,7 +241,11 @@ class _MenuState extends State<Menu> {
                       ),
                       title: Padding(
                         padding: EdgeInsets.all(8.0),
-                        child: Text('Sign Out',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
+                        child: Text(
+                          'Sign Out',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 16),
+                        ),
                       ),
                       trailing: Icon(Icons.arrow_forward),
                     ),
@@ -241,7 +257,9 @@ class _MenuState extends State<Menu> {
                       ),
                       title: Padding(
                         padding: EdgeInsets.all(8.0),
-                        child: Text('Change email',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                        child: Text('Change email',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16)),
                       ),
                       trailing: Icon(Icons.arrow_forward),
                     ),
@@ -253,7 +271,9 @@ class _MenuState extends State<Menu> {
                       ),
                       title: Padding(
                         padding: EdgeInsets.all(8.0),
-                        child: Text('Change Number',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+                        child: Text('Change Number',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16)),
                       ),
                       trailing: Icon(Icons.arrow_forward),
                     ),
